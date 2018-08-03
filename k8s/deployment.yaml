@@ -4,6 +4,7 @@ metadata:
   labels:
     run: code-class-website
   name: code-class-website
+  namespace: code-class-website
 spec:
   replicas: 1
   selector:
@@ -15,7 +16,7 @@ spec:
         run: code-class-website
     spec:
       containers:
-      - image: localhost:5000/code-class-website:0.1.0
+      - image: 479119651457.dkr.ecr.ap-southeast-2.amazonaws.com/code-class-website:0.1.0
         name: code-class-website
         ports:
         - containerPort: 80
