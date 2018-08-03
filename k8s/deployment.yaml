@@ -30,11 +30,17 @@ metadata:
   labels:
     run: code-class-website
   name: code-class-website
+  namespace: code-class-website
 spec:
+  type: NodePort
   ports:
-  - port: 80
-    protocol: TCP
+  - name: http
+    port: 80
     targetPort: 80
+    protocol: TCP
+  - name: https
+    port: 443
+    targetPort: 443
+    protocol: TCP
   selector:
     run: code-class-website
-  type: NodePort

@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: code-class-website
+  namespace: code-class-website
+spec:
+  rules:
+  - host: code-class.internal.hotdoc.com.au
+    http:
+      paths:
+      - backend:
+          serviceName: code-class-website
+          servicePort: 80
+        path: /
