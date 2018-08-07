@@ -16,7 +16,7 @@ spec:
         run: code-class-website
     spec:
       containers:
-      - image: 479119651457.dkr.ecr.ap-southeast-2.amazonaws.com/code-class-website:1.0.0
+      - image: 479119651457.dkr.ecr.ap-southeast-2.amazonaws.com/code-class-website:1.0.1
         name: code-class-website
         ports:
         - containerPort: 80
