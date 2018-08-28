@@ -1,0 +1,20 @@
+body {
+  background-color: #C6D8FF;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+.lorem-boxes {
+  display: flex;
+}
+
+.lorem-boxes .what {
+  background-color: #449DD1;
+}
+.lorem-boxes .why {
+  background-color: #B388EB;
+}
+.lorem-boxes .where {
+  background-color: #8093f1;
+}
